@@ -12,7 +12,8 @@ button, input, select, a {
 
 
 body {
-    font-family: Arial, Geneva, Tahoma, sans-serif
+    font-family: Arial, Geneva, Tahoma, sans-serif;
+    margin: 20px;
 }
 
 a {
@@ -21,7 +22,7 @@ a {
     cursor: pointer;
 }
 
-.Buttons_AW {
+.container.buttons {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,7 +30,7 @@ a {
     flex-wrap: wrap;
 }
 
-.button {
+.link.button.mainPage {
     background-color: #4CAF50; /* Green */
     border: none;
     color: white;
@@ -42,10 +43,10 @@ a {
     cursor: pointer;
     border-radius: 5px;
 }
-.button:hover {
+.link.button.mainPage:hover {
     background-color: #45a049;
 }
-.button:active {
+.link.button.mainPage:active {
     background-color: #49634a;
     border-radius: 10px;
 }
