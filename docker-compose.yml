@@ -1,9 +1,15 @@
+version: "3.8"
 services:
-  mathe-website-react:
-    build: .
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
     ports:
-      - "5173:5173"
+      - "3000:3000"
     volumes:
-      - .:/app
-      - /app/node_modules
-    
+      - ./:/app # Synchronisiert deinen Code
+      - /app/node_modules # Wichtig: Verhindert, dass node_modules überschrieben wird
+    environment:
+      - CHOKIDAR_USEPOLLING=true # Aktiviert File Watching
+      - WATCHPACK_POLLING=true # Für neuere React-Versionen
+
