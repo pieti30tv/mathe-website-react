@@ -1,3 +1,5 @@
+import Button from "../Elements/Button";
+
 function Footer() {
   return (
     <footer>
