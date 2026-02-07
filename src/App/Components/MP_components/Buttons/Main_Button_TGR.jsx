@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function Main_Button_TGR() {
   return (
-    <Link to="">
+    <Link to="/tgr">
       <button id="umrechner link" className="link button mainPage">
         TGR Rechner
       </button>
