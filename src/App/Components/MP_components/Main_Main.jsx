@@ -1,4 +1,5 @@
-import Button from "../Elements/Button";
+import Button from "../Main_Components/Button.jsx";
+
 function Main() {
   return (
     <main>
