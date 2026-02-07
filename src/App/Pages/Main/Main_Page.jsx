@@ -1,8 +1,14 @@
+import Header from "../../Components/MP_components/Main_Header.jsx";
+import Footer from "../../Components/MP_components/Main_Footer.jsx";
+import Main from "../../Components/MP_components/Main_Main.jsx";
+
 function Main_Page() {
   return (
-    <div>
-      <p>Main Page</p>
-    </div>
+    <>
+      <Header />
+      <Main />
+      <Footer />
+    </>
   );
 }
 
