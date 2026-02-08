@@ -24,6 +24,11 @@ a {
   cursor: pointer;
 }
 
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Container für zentrierte Buttons */
 .container.buttons {
   display: flex;
   justify-content: center;
@@ -32,8 +37,18 @@ a {
   flex-wrap: wrap;
 }
 
+/* Container für linksbündige Buttons */
+.container.buttons-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 15px 0;
+  flex-wrap: wrap;
+}
+
+/* Button Styles */
 .link.button.mainPage {
-  background-color: #4caf50; /* Green */
+  background-color: #4caf50;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -45,13 +60,41 @@ a {
   cursor: pointer;
   border-radius: 5px;
 }
+
 .link.button.mainPage:hover {
   background-color: #45a049;
 }
+
 .link.button.mainPage:active {
   background-color: #49634a;
   border-radius: 10px;
 }
-p {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+/* Input & Select Styles */
+input[type="text"],
+select {
+  padding: 8px 12px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.2s;
+  min-width: 250px;
+  margin-bottom: 10px;
+}
+
+input[type="text"]:focus,
+select:focus {
+  outline: none;
+  border-color: #4caf50;
+}
+
+input[readonly] {
+  cursor: not-allowed;
+}
+
+/* Label Styles */
+label {
+  margin-right: 8px;
+  display: inline-block;
+  min-width: 150px;
 }
