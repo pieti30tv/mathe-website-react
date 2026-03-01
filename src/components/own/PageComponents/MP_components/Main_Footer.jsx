@@ -1,5 +1,3 @@
-import { motion } from "motion/react";
-
 function Footer() {
   return (
     <footer>
